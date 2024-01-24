@@ -1,0 +1,146 @@
+:root {
+    --background-color1: #000000;
+    --background-color2: #11112f;
+    --background-color3: #131347;
+    --text-color1: #d2d9ef;
+    --text-color2: #91a7e6;
+}
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(
+        90deg, 
+        var(--background-color1) 0%, 
+        var(--background-color2) 80%, 
+        var(--background-color3) 100%);
+    color: var(--text-color1);
+
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--text-color2);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.list-item a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: var(--background-color2);
+    text-decoration: none;
+}
+
+#welcome-section, #about {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+h3 {
+    font-size: 3rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+#about {
+    padding: 1rem;
+}
+
+#projects {
+    text-align: center;
+    padding: 3rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 1rem;
+    justify-items: center;
+}
+
+.project-title {
+    font-size: 1.5rem;
+}
+
+.project-title a {
+    text-decoration: none;
+    color: var(--text-color2);
+}
+
+
+
+#contact-info {
+    text-align: center;
+}
+
+.icon-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 3rem auto;
+
+}
+
+.icon {
+    font-size: 3rem;
+}
+
+footer {
+    padding-top: 4rem;
+    text-align: end;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin: 0.1rem 2rem;
+}
+
+@media only screen and (max-width:600px) {
+    h3 {
+        font-size: 2rem;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    p {
+        font-size: 1.5rem;
+    }
+}
